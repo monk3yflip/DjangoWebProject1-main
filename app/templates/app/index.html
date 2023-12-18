@@ -1,0 +1,139 @@
+﻿{% extends "app/layout.html" %}
+
+{% block content %}
+{% load static %}
+
+
+<div class="jumbotron">
+    <h1>KarenPC</h1>
+    <p class="lead">Магазин компьютерных комплектующих.</p>
+    <p><a style="background-color: brown; border-color: blanchedalmond; margin-bottom: 15px;" href="about/" class="btn btn-primary btn-large">Подробнее</a></p>
+</div>
+
+<div style="max-width: 600px; display: block; margin-left: auto; margin-right: auto;" id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="2000">
+
+    <ol class="carousel-indicators">
+
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+
+        <li data-target="#myCarousel" data-slide-to="3"></li>
+
+    </ol>
+
+    <div class="carousel-inner" role="listbox">
+
+        <div class="item active">
+
+            <img src="{% static 'app/content/banner1.jpg'%} " alt="Первый слайд" class="img-responsive" />
+
+            <div class="carousel-caption" role="option">
+
+                <p>
+
+
+                    <a class="btn btn-default" href="catalog/">
+
+                        Сделать заказ
+
+                    </a>
+
+                </p>
+
+            </div>
+
+        </div>
+
+        <div class="item">
+
+            <img src="{% static 'app/content/banner2.jpg'%}" alt="Второй слайд" class="img-responsive" />
+
+            <div class="carousel-caption" role="option">
+
+                <p>
+
+                    <a class="btn btn-default" href="catalog/">
+
+                        Сделать заказ
+
+                    </a>
+
+                </p>
+
+            </div>
+
+        </div>
+
+        <div class="item">
+
+            <img src=" {% static 'app/content/banner3.jpg'%} " alt="Третий слайд" class="img-responsive" />
+
+            <div class="carousel-caption" role="option">
+
+                <p>
+                    <a class="btn btn-default" href="catalog/">
+
+                        Сделать заказ
+
+                    </a>
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+
+        <span class="sr-only">Previous</span>
+
+    </a>
+
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+
+        <span class="sr-only">Next</span>
+
+    </a>
+
+</div>
+
+<div class="row">
+    <div class="col-md-4">
+        <h2>Доставка</h2>
+        <p>
+            Мы предлагаеем услугу доставки своих блюд на дом.
+            Если вы не можете посетить ресторан лично, вы можете заказать доставку на дом или в офис.
+            Доставка осуществляется бесплатно при заказе на сумму от 1000 рублей.
+            Время доставки составляет от 45 минут до 1 часа в зависимости от адреса доставки.
+        </p>
+        <p><a class="btn btn-default" href="#">Узнать больше</a></p>
+    </div>
+    <div class="col-md-4">
+        <h2>Забронировать столик</h2>
+        <p>
+            Мы предлагаеем своим гостям услугу бронирования столиков.
+            Вы можете забронировать столик на удобное для вас время и дату, позвонив по телефону ресторана или оставив заявку на сайте.
+            Бронирование столиков осуществляется бесплатно.
+        </p>
+        <p><a class="btn btn-default" href="#">Узнать больше &raquo;</a></p>
+    </div>
+    <div class="col-md-4">
+        <h2>Заказать кейтеринг</h2>
+        <p>
+            Мы предлагаеем также предлагает услуги кейтеринга.
+            Если вы планируете провести мероприятие на выезде, наши повара с радостью приготовят для вас блюда индийской кухни прямо на месте проведения мероприятия.
+            Мы предлагаем широкий выбор блюд, напитков и десертов, а также возможность оформления стола в индийском стиле.
+            Для заказа услуги кейтеринга свяжитесь с нами по телефону или электронной почте.
+        </p>
+        <p><a class="btn btn-default" href="#">Узнать больше &raquo;</a></p>
+    </div>
+</div>
+
+{% endblock %}
